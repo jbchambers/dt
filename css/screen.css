@@ -508,7 +508,11 @@ section {
   width: 100vw;
   position: relative;
   z-index: 2;
-  background: #fff; }
+  background: #fff;
+  float: left; }
+
+a:hover, input:hover, button:hover {
+  transition: all .3s ease-in-out; }
 
 /*----- HEADER -----*/
 header {
@@ -668,3 +672,88 @@ header {
     font-size: 16px;
     font-weight: 300;
     font-style: italic; }
+
+/*----- WHAT WE DO -----*/
+.what-we-do, .culture {
+  padding-top: 145px;
+  padding-bottom: 100px; }
+  .what-we-do:after, .culture:after {
+    content: '';
+    width: 100%;
+    max-width: 1200px;
+    height: 1px;
+    display: block;
+    background: #ebebeb;
+    margin: 0 auto;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0; }
+  .what-we-do .container, .culture .container {
+    max-width: 940px;
+    margin: 0 auto;
+    clear: both;
+    float: none; }
+  .what-we-do .column, .culture .column {
+    width: 50%;
+    float: left; }
+  .what-we-do .title, .culture .title {
+    font-size: 42px;
+    line-height: 1;
+    letter-spacing: -0.1px;
+    font-weight: 800;
+    text-transform: uppercase;
+    margin-bottom: 55px; }
+    .what-we-do .title span, .culture .title span {
+      font-weight: 300;
+      font-style: italic; }
+  .what-we-do ul, .culture ul {
+    margin: 0;
+    padding: 0; }
+    .what-we-do ul li, .culture ul li {
+      list-style-type: none;
+      padding: 0;
+      font-size: 21px;
+      line-height: 38px;
+      letter-spacing: -0.1px;
+      font-weight: 300;
+      margin-bottom: 5px; }
+  .what-we-do .dont .title, .culture .dont .title {
+    position: relative; }
+    .what-we-do .dont .title:before, .culture .dont .title:before {
+      content: '';
+      width: 3px;
+      height: 130px;
+      background: #ff535b;
+      position: absolute;
+      -webkit-transform: rotate(25deg);
+              transform: rotate(25deg);
+      top: -45px;
+      left: 240px; }
+
+/*----- CULTURE -----*/
+.culture {
+  padding-bottom: 85px; }
+  .culture:after {
+    display: none; }
+  .culture .title {
+    font-size: 34px;
+    margin-bottom: 20px; }
+  .culture .excerpt {
+    font-size: 21px;
+    line-height: 34px;
+    font-weight: 300;
+    margin-bottom: 20px; }
+  .culture a {
+    color: #37aecc;
+    font-size: 18px;
+    font-weight: 300;
+    text-decoration: none; }
+    .culture a:hover {
+      color: #333; }
+  .culture .quote {
+    font-size: 36px;
+    line-height: 48px;
+    letter-spacing: -0.25px;
+    font-weight: 300;
+    margin-bottom: 55px; }
