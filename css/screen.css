@@ -498,15 +498,22 @@ ul.bxslider {
   font-size: .85em;
   padding: 10px; }
 
+/*----- GLOBAL -----*/
 body {
   font-family: "Open Sans", sans-serif;
   text-align: center;
   color: #333; }
 
+section {
+  width: 100vw;
+  position: relative;
+  z-index: 2;
+  background: #fff; }
+
 /*----- HEADER -----*/
 header {
   position: fixed;
-  z-index: 2;
+  z-index: 1;
   height: 120px;
   width: 100vw;
   top: 0; }
@@ -538,8 +545,12 @@ header {
 
 /*----- SECTION: UI/UX -----*/
 .ui-ux {
-  position: relative;
-  margin-top: 140px; }
+  position: fixed;
+  top: 0;
+  margin-top: 140px;
+  width: 100vw;
+  background: #fff;
+  z-index: 1; }
   .ui-ux .icon {
     width: 60px;
     height: 74px;
@@ -575,7 +586,8 @@ header {
 .love {
   background: #f7f7f7;
   padding-top: 80px;
-  padding-bottom: 80px; }
+  padding-bottom: 80px;
+  margin-top: 515px; }
   .love .title {
     font-size: 42px;
     line-height: 48px;
@@ -606,3 +618,53 @@ header {
         font-weight: 800;
         text-transform: uppercase;
         font-style: normal; }
+
+/*----- GREAT PEOPLE -----*/
+.great-people {
+  background: url(../../img/surround-bg.jpg) center center no-repeat;
+  background-size: cover;
+  color: #fff;
+  padding-top: 70px;
+  padding-bottom: 90px; }
+  .great-people .title {
+    font-size: 42px;
+    line-height: 48px;
+    letter-spacing: -0.1px;
+    font-weight: 800;
+    text-transform: uppercase;
+    margin-bottom: 155px; }
+  .great-people .bx-wrapper {
+    max-width: 940px !important;
+    background: transparent;
+    border: 0;
+    box-shadow: none;
+    margin: 0 auto; }
+    .great-people .bx-wrapper .bx-pager.bx-default-pager a {
+      background: #fff;
+      border: 2px solid transparent;
+      height: 7px;
+      width: 7px; }
+      .great-people .bx-wrapper .bx-pager.bx-default-pager a.active {
+        background: transparent;
+        border: 2px solid #fff; }
+  .great-people .bx-controls-direction {
+    display: none; }
+  .great-people .quote {
+    font-size: 43px;
+    line-height: 59px;
+    letter-spacing: -0.1px;
+    font-weight: 300;
+    margin-bottom: 55px; }
+  .great-people img {
+    margin: 0 auto 15px; }
+  .great-people .name {
+    font-size: 18px;
+    line-height: 25px;
+    letter-spacing: 0;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 5px; }
+  .great-people .job-title {
+    font-size: 16px;
+    font-weight: 300;
+    font-style: italic; }
