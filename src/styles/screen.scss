@@ -156,6 +156,7 @@ header {
 .great-people {
   background: url(../../img/surround-bg.jpg) center center no-repeat;
   background-size: cover;
+  background-attachment: fixed;
   color: #fff;
   padding-top: 70px;
   padding-bottom: 90px;
@@ -295,4 +296,11 @@ header {
     @include font (36px, 48px, -.25px, 300);
     margin-bottom: 55px;
   }
+}
+
+/*----- INSTAGRAM STIP -----*/
+.instagram-strip {
+  height: 500px;
+  background: url(../../img/instagram-strip.jpg) center center no-repeat;
+  background-size: cover;
 }
