@@ -362,3 +362,127 @@ header {
     margin-bottom: 30px;
   }
 }
+
+/*----- DESIGN QUIZ -----*/
+.quiz {
+  color: #fff;
+  .intro {
+    background: #282828;
+    padding-top: 130px;
+    padding-bottom: 105px;
+    .container {
+      max-width: 1170px;
+    }
+    .title {
+      @include font (42px, 48px, -.1px, 800);
+      position: relative;
+      width: 940px;
+      margin: 0 auto 45px;
+      &:before {
+        content: '';
+        width: 46px;
+        height: 46px;
+        float: left;
+        background: url(../../img/icon_pop-quiz.png) center center no-repeat;
+        display: inline-block;
+        margin-right: -45px;
+      }
+    }
+    .excerpt {
+      font-size: 20px;
+      line-height: 30px;
+      letter-spacing: -.1px;
+    }
+  }
+  .question-block {
+    background: $dark;
+    padding: 70px 0 140px;
+    .number {
+      @include font (21px, 30px, -.1px, 400);
+      font-style: italic;
+      margin-bottom: 15px;
+    }
+    .question {
+      @include font (40px, 48px, -.1px, 800);
+      margin-bottom: 105px;
+    }
+    .example {
+      font-size: 156px;
+      font-family: "Helvetica Neue";
+      font-weight: bold;
+    }
+  }
+  .answers {
+    background: #0a0a0a;
+    padding: 35px 0;
+    float: left;
+    width: 100vw;
+    .item {
+      width: 24%;
+      float: left;
+      margin-right: 1.3333%;
+      &:last-child {
+        margin-right: 0;
+      }
+      a {
+        @include font (14px, 1, -.1px, 800);
+        text-transform: uppercase;
+        display: block;
+        color: #fff;
+        text-decoration: none;
+        border: 2px solid #fff;
+        border-radius: 30px;
+        padding: 12px 0;
+        &:hover {
+          background: #fff;
+          color: #0a0a0a;
+        }
+      }
+    }
+  }
+}
+
+/*----- HOW TO GET THIS JOB -----*/
+.how-to {
+  padding-top: 145px;
+  padding-bottom: 145px;
+  .title {
+    @include font (42px, 48px, -.1px, 800);
+    margin-bottom: 40px;
+  }
+  .icon {
+    margin-bottom: 30px;
+  }
+  p, li {
+    @include font (21px, 30px, 0, 700);
+    margin-bottom: 30px;
+  }
+  ul {
+    margin: 0;
+    padding: 0;
+  }
+  li {
+    font-weight: 400;
+    list-style-type: none;
+  }
+  .send {
+    width: 620px;
+    padding: 20px 0;
+    @include font (18px, 30px, 0, 400);
+    border: 1px solid $dark;
+    text-align: center;
+    margin: 0 auto;
+    float: none;
+    display: block;
+    position: relative;
+    top: 30px;
+    a {
+      font-weight: 700;
+      color: $blue;
+      text-decoration: none;
+      &:hover {
+        color: $dark;
+      }
+    }
+  }
+}

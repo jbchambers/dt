@@ -825,3 +825,124 @@ header {
     letter-spacing: 0;
     font-weight: 300;
     margin-bottom: 30px; }
+
+/*----- DESIGN QUIZ -----*/
+.quiz {
+  color: #fff; }
+  .quiz .intro {
+    background: #282828;
+    padding-top: 130px;
+    padding-bottom: 105px; }
+    .quiz .intro .container {
+      max-width: 1170px; }
+    .quiz .intro .title {
+      font-size: 42px;
+      line-height: 48px;
+      letter-spacing: -0.1px;
+      font-weight: 800;
+      position: relative;
+      width: 940px;
+      margin: 0 auto 45px; }
+      .quiz .intro .title:before {
+        content: '';
+        width: 46px;
+        height: 46px;
+        float: left;
+        background: url(../../img/icon_pop-quiz.png) center center no-repeat;
+        display: inline-block;
+        margin-right: -45px; }
+    .quiz .intro .excerpt {
+      font-size: 20px;
+      line-height: 30px;
+      letter-spacing: -.1px; }
+  .quiz .question-block {
+    background: #333;
+    padding: 70px 0 140px; }
+    .quiz .question-block .number {
+      font-size: 21px;
+      line-height: 30px;
+      letter-spacing: -0.1px;
+      font-weight: 400;
+      font-style: italic;
+      margin-bottom: 15px; }
+    .quiz .question-block .question {
+      font-size: 40px;
+      line-height: 48px;
+      letter-spacing: -0.1px;
+      font-weight: 800;
+      margin-bottom: 105px; }
+    .quiz .question-block .example {
+      font-size: 156px;
+      font-family: "Helvetica Neue";
+      font-weight: bold; }
+  .quiz .answers {
+    background: #0a0a0a;
+    padding: 35px 0;
+    float: left;
+    width: 100vw; }
+    .quiz .answers .item {
+      width: 24%;
+      float: left;
+      margin-right: 1.3333%; }
+      .quiz .answers .item:last-child {
+        margin-right: 0; }
+      .quiz .answers .item a {
+        font-size: 14px;
+        line-height: 1;
+        letter-spacing: -0.1px;
+        font-weight: 800;
+        text-transform: uppercase;
+        display: block;
+        color: #fff;
+        text-decoration: none;
+        border: 2px solid #fff;
+        border-radius: 30px;
+        padding: 12px 0; }
+        .quiz .answers .item a:hover {
+          background: #fff;
+          color: #0a0a0a; }
+
+/*----- HOW TO GET THIS JOB -----*/
+.how-to {
+  padding-top: 145px;
+  padding-bottom: 145px; }
+  .how-to .title {
+    font-size: 42px;
+    line-height: 48px;
+    letter-spacing: -0.1px;
+    font-weight: 800;
+    margin-bottom: 40px; }
+  .how-to .icon {
+    margin-bottom: 30px; }
+  .how-to p, .how-to li {
+    font-size: 21px;
+    line-height: 30px;
+    letter-spacing: 0;
+    font-weight: 700;
+    margin-bottom: 30px; }
+  .how-to ul {
+    margin: 0;
+    padding: 0; }
+  .how-to li {
+    font-weight: 400;
+    list-style-type: none; }
+  .how-to .send {
+    width: 620px;
+    padding: 20px 0;
+    font-size: 18px;
+    line-height: 30px;
+    letter-spacing: 0;
+    font-weight: 400;
+    border: 1px solid #333;
+    text-align: center;
+    margin: 0 auto;
+    float: none;
+    display: block;
+    position: relative;
+    top: 30px; }
+    .how-to .send a {
+      font-weight: 700;
+      color: #37aecc;
+      text-decoration: none; }
+      .how-to .send a:hover {
+        color: #333; }
