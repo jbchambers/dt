@@ -20,6 +20,8 @@ body {
   font-family: $o;
   text-align: center;
   color: $dark;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 section {
@@ -91,7 +93,7 @@ header {
     margin: 0 auto 20px;
   }
   .title {
-    @include font (76px, 73.27px, 0, 700);
+    @include font (76px, 73.27px, 0, 800);
     text-transform: uppercase;
     position: relative;
     margin-bottom: 50px;
@@ -303,4 +305,46 @@ header {
   height: 500px;
   background: url(../../img/instagram-strip.jpg) center center no-repeat;
   background-size: cover;
+}
+
+/*----- WORK WITH PERKS -----*/
+.perks {
+  background: url(../../img/work-perks-bg.jpg) center center no-repeat;
+  background-size: cover;
+  padding-top: 115px;
+  .container {
+    max-width: 990px;
+    float: none;
+    margin: 0 auto;
+  }
+  .title {
+    @include font (42px, 48px, -.1px, 800);
+    text-transform: uppercase;
+    margin-bottom: 50px;
+  }
+  .excerpt {
+    @include font (21px, 32px, -.1px, 300);
+    margin-bottom: 75px;
+  }
+  .item {
+    width: 33.3333%;
+    float: left;
+    margin-bottom: 100px;
+  }
+  .icon {
+    width: 100%;
+    height: 75px;
+    img {
+      margin: 0 auto;
+    }
+  }
+  .feature {
+    @include font (18px, 1, -.1px, 800);
+    text-transform: uppercase;
+    margin-bottom: 15px;
+  }
+  .info {
+    font-weight: 400;
+    padding: 0 20px;
+  }
 }

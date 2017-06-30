@@ -502,7 +502,9 @@ ul.bxslider {
 body {
   font-family: "Open Sans", sans-serif;
   text-align: center;
-  color: #333; }
+  color: #333;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
 
 section {
   width: 100vw;
@@ -565,7 +567,7 @@ header {
     font-size: 76px;
     line-height: 73.27px;
     letter-spacing: 0;
-    font-weight: 700;
+    font-weight: 800;
     text-transform: uppercase;
     position: relative;
     margin-bottom: 50px; }
@@ -764,3 +766,45 @@ header {
   height: 500px;
   background: url(../../img/instagram-strip.jpg) center center no-repeat;
   background-size: cover; }
+
+/*----- WORK WITH PERKS -----*/
+.perks {
+  background: url(../../img/work-perks-bg.jpg) center center no-repeat;
+  background-size: cover;
+  padding-top: 115px; }
+  .perks .container {
+    max-width: 990px;
+    float: none;
+    margin: 0 auto; }
+  .perks .title {
+    font-size: 42px;
+    line-height: 48px;
+    letter-spacing: -0.1px;
+    font-weight: 800;
+    text-transform: uppercase;
+    margin-bottom: 50px; }
+  .perks .excerpt {
+    font-size: 21px;
+    line-height: 32px;
+    letter-spacing: -0.1px;
+    font-weight: 300;
+    margin-bottom: 75px; }
+  .perks .item {
+    width: 33.3333%;
+    float: left;
+    margin-bottom: 100px; }
+  .perks .icon {
+    width: 100%;
+    height: 75px; }
+    .perks .icon img {
+      margin: 0 auto; }
+  .perks .feature {
+    font-size: 18px;
+    line-height: 1;
+    letter-spacing: -0.1px;
+    font-weight: 800;
+    text-transform: uppercase;
+    margin-bottom: 15px; }
+  .perks .info {
+    font-weight: 400;
+    padding: 0 20px; }
