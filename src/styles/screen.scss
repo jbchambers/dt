@@ -32,6 +32,13 @@ section {
   float: left;
 }
 
+.container {
+  max-width: 940px;
+  float: none;
+  margin: 0 auto;
+  clear: both;
+}
+
 a, input, button {
   &:hover {
     transition: all .3s ease-in-out;
@@ -223,12 +230,6 @@ header {
     left: 0;
     right: 0;
   }
-  .container {
-    max-width: 940px;
-    margin: 0 auto;
-    clear: both;
-    float: none;
-  }
   .column {
     width: 50%;
     float: left;
@@ -314,8 +315,6 @@ header {
   padding-top: 115px;
   .container {
     max-width: 990px;
-    float: none;
-    margin: 0 auto;
   }
   .title {
     @include font (42px, 48px, -.1px, 800);
@@ -346,5 +345,20 @@ header {
   .info {
     font-weight: 400;
     padding: 0 20px;
+  }
+}
+
+/*----- POSITION REQUIREMENTS -----*/
+.requirements {
+  padding-top: 115px;
+  padding-bottom: 80px;
+  .title {
+    @include font (42px, 48px, -.1px, 800);
+    text-transform: uppercase;
+    margin-bottom: 65px;
+  }
+  p {
+    @include font (21px, 28px, 0, 300);
+    margin-bottom: 30px;
   }
 }
