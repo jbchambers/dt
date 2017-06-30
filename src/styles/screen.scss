@@ -1,6 +1,7 @@
 @import 'base/variables';
 @import 'base/normalize';
 @import 'base/global';
+@import 'plugins/bxslider';
 
 $o: 'Open Sans', sans-serif;
 $dark: #333;
@@ -15,6 +16,8 @@ $light: #666;
 
 body {
   font-family: $o;
+  text-align: center;
+  color: $dark;
 }
 
 /*----- HEADER -----*/
@@ -59,7 +62,6 @@ header {
 
 /*----- SECTION: UI/UX -----*/
 .ui-ux {
-  text-align: center;
   position: relative;
   margin-top: 140px;
   .icon {
@@ -88,6 +90,44 @@ header {
     color: $light;
     max-width: 1000px;
     display: block;
-    margin: 0 auto;
+    margin: 0 auto 105px;
+  }
+}
+
+/*----- LOVE WHAT YOU DO -----*/
+.love {
+  background: #f7f7f7;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  .title {
+    @include font (42px, 48px, -.1px, 800);
+    text-transform: uppercase;
+    margin-bottom: 95px;
+  }
+  .bx-wrapper {
+    max-width: 100vw !important;
+    background: transparent;
+    border: 0;
+    box-shadow: none;
+    margin-bottom: 0;
+  }
+  .bx-viewport {
+    width: 100vw;
+  }
+  .item {
+    width: 33vw !important;
+    img {
+      margin: 0 auto;
+    }
+    .caption {
+      @include font (18px, 48px, -.1px, 100);
+      font-style: italic;
+      margin-bottom: 90px;
+      span {
+        font-weight: 800;
+        text-transform: uppercase;
+        font-style: normal;
+      }
+    }
   }
 }

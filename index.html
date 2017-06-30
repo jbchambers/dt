@@ -10,7 +10,9 @@
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/screen.css">
     <script src="js/vendor/modernizr-2.8.3.min.js"></script>
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css"/>
 </head>
 <body>
 <!--[if lt IE 8]>
@@ -46,22 +48,24 @@
 </section>
 
 <!-- Love What You Do -->
-<section class="love-what-you-do">
-    <div class="item">
-        <img src="img/love_image-1.png"/>
+<section class="love">
+    <div class="title">Love What You Do</div>
+    <div class="love-carousel">
+        <div class="item">
+            <img src="img/love_image-1.png"/>
+            <div class="caption"><span>UI Design</span> by Eduardo</div>
+            <img src="img/love_image-2.png"/>
+        </div>
+        <div class="item">
+            <img src="img/love_image-3.png"/>
 
-        <div class="caption"><span>UI Design</span> by Eduardo</div>
-        <img src="img/love_image-2.png"/>
-    </div>
-    <div class="item">
-        <img src="img/love_image-3.png"/>
+            <div class="caption"><span>Production Design</span> by Shawn</div>
+        </div>
+        <div class="item">
+            <img src="img/love_image-4.png"/>
 
-        <div class="caption"><span>Production Design</span> by Shawn</div>
-    </div>
-    <div class="item">
-        <img src="img/love_image-4.png"/>
-
-        <div class="caption"><span>Application Design</span> by Brad</div>
+            <div class="caption"><span>Application Design</span> by Brad</div>
+        </div>
     </div>
 </section>
 
@@ -313,7 +317,7 @@
 
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
-
+<script src="/js/jquery.bxslider.min.js"></script>
 <script src="js/plugins.js"></script>
 <script src="js/main.js"></script>
 </body>
