@@ -352,3 +352,75 @@ table {
 td,
 th {
   padding: 0; }
+
+body {
+  font-family: "Open Sans", sans-serif; }
+
+/*----- HEADER -----*/
+header {
+  position: fixed;
+  z-index: 2;
+  height: 120px;
+  width: 100vw;
+  top: 0; }
+
+.logo {
+  width: 183px;
+  height: 24px;
+  background: url(../../img/dt-logo.png) center center no-repeat;
+  font-size: 0;
+  position: absolute;
+  top: 46px;
+  left: 56px; }
+
+.menu {
+  display: none; }
+
+.menu-toggle {
+  position: absolute;
+  top: 55px;
+  right: 55px; }
+  .menu-toggle i {
+    width: 30px;
+    height: 6px;
+    display: block;
+    margin-bottom: 4px;
+    background: #333; }
+    .menu-toggle i:last-child {
+      margin-bottom: 0; }
+
+/*----- SECTION: UI/UX -----*/
+.ui-ux {
+  text-align: center;
+  position: relative;
+  margin-top: 140px; }
+  .ui-ux .icon {
+    width: 60px;
+    height: 74px;
+    background: url(../../img/icon_ui-ux.png) center center no-repeat;
+    display: block;
+    margin: 0 auto 20px; }
+  .ui-ux .title {
+    font-size: 76px;
+    line-height: 73.27px;
+    letter-spacing: 0;
+    font-weight: 700;
+    text-transform: uppercase;
+    position: relative;
+    margin-bottom: 50px; }
+    .ui-ux .title:before {
+      content: '';
+      width: 180px;
+      height: 2px;
+      background: #333;
+      display: block;
+      margin: 0 auto 15px; }
+  .ui-ux .excerpt {
+    font-size: 20px;
+    line-height: 28px;
+    letter-spacing: -0.1px;
+    font-weight: 300;
+    color: #666;
+    max-width: 1000px;
+    display: block;
+    margin: 0 auto; }

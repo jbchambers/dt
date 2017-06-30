@@ -1,13 +1,93 @@
 @import 'base/variables';
-
 @import 'base/normalize';
 @import 'base/global';
 
-// Import Components
-// @import 'components/header';
+$o: 'Open Sans', sans-serif;
+$dark: #333;
+$light: #666;
 
-// Import Layouts
-// @import 'layouts/home';
+@mixin font($font-size,$line-height,$letter-spacing, $font-weight) {
+  font-size: $font-size;
+  line-height: $line-height;
+  letter-spacing: $letter-spacing;
+  font-weight: $font-weight;
+}
 
-// Import Plugins
-// @import 'plugins/plugin';
+body {
+  font-family: $o;
+}
+
+/*----- HEADER -----*/
+header {
+  position: fixed;
+  z-index: 2;
+  // background: #fff;
+  height: 120px;
+  width: 100vw;
+  top: 0;
+}
+
+.logo {
+  width: 183px;
+  height: 24px;
+  background: url(../../img/dt-logo.png) center center no-repeat;
+  font-size: 0;
+  position: absolute;
+  top: 46px;
+  left: 56px;
+}
+
+.menu {
+  display: none;
+}
+
+.menu-toggle {
+  position: absolute;
+  top: 55px;
+  right: 55px;
+  i {
+    width: 30px;
+    height: 6px;
+    display: block;
+    margin-bottom: 4px;
+    background: $dark;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+/*----- SECTION: UI/UX -----*/
+.ui-ux {
+  text-align: center;
+  position: relative;
+  margin-top: 140px;
+  .icon {
+    width: 60px;
+    height: 74px;
+    background: url(../../img/icon_ui-ux.png) center center no-repeat;
+    display: block;
+    margin: 0 auto 20px;
+  }
+  .title {
+    @include font (76px, 73.27px, 0, 700);
+    text-transform: uppercase;
+    position: relative;
+    margin-bottom: 50px;
+    &:before {
+      content: '';
+      width: 180px;
+      height: 2px;
+      background: $dark;
+      display: block;
+      margin: 0 auto 15px;
+    }
+  }
+  .excerpt {
+    @include font (20px, 28px, -.1px, 300);
+    color: $light;
+    max-width: 1000px;
+    display: block;
+    margin: 0 auto;
+  }
+}
